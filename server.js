@@ -29,7 +29,7 @@ app.use("/api/v1/auth", authRoutes);
 
 //rest api
 app.use('*', function(req,res){
-  res.sendFile(path.joinn(__dirname, './client/build/index.html'));
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 //PORT
